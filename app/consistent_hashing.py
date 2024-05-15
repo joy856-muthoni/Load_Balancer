@@ -51,7 +51,7 @@ class ConsistentHashing:
         """
         # Filter out the node and its virtual replicas from the nodes list
         self.nodes = [n for n in self.nodes if n[1] != node]
-def get_node(self, key):
+    def get_node(self, key):
         """
         Get the physical node responsible for the given key.
         
