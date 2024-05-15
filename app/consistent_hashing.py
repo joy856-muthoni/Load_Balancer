@@ -66,7 +66,7 @@ class ConsistentHashing:
 
         # Hash the key to find its position on the hash ring
         key_hash = key % self.num_slots
-        # Find the first node with a hash value greater than or equal to the key_hash
+        # Find the first node with a hash value greater than or equal to the Key_hash
         for h in self.nodes:
             if key_hash <= h[0]:
                 return h[1]
